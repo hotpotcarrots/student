@@ -7,7 +7,7 @@ comments: true
 
 ## As a conversation Starter
 
-Here are some places I have lived.
+Hello! My Name is Perry Say and I was borned and Raised in San Diego.
 
 <comment>
 Flags are made using Wikipedia images
