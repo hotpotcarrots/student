@@ -61,9 +61,7 @@ Flags are made using Wikipedia images
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
         {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
+    
     ];
 
     // 3a. Consider how to update style count for size of container
@@ -108,29 +106,15 @@ Here is what I do in my free time:
 - 🎵 I enjoy listening to music while im working on homework or walking to class, with some of my favorite artists being Malcolm Todd, Bruno Mars, and Michael Jackson. 
 - 🍔 When Im out with family, I enjoy trying all sorts of food, whether it be Mexican, Japanese, Chinese, or even trying Fusions of these foods.
 
-
-### Values
-
-Everything for me, as for many others, revolves around family and faith.
-
-- My mother told me that I was Danish, English. and Irish, here is my researched [family tree]({{site.baseurl}}/images/about/familytree.png)
-- My family is pretty big as I have been married twice, my 1st wife passed away.  We have had 5 kids, 4 adopted by me, 1 biological.  Plus, there are three grandkids.  My name to my grandkids is Abuilito.
-- The gallery of pics has some of my family, fun, culture and faith memories.
-
 <comment>
 Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
-  <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
-  <img src="{{site.baseurl}}/images/about/john_lora.jpg" alt="Image 5">
-  <img src="{{site.baseurl}}/images/about/lora_fam.jpg" alt="Image 6">
-  <img src="{{site.baseurl}}/images/about/lora_fam2.jpg" alt="Image 7">
-  <img src="{{site.baseurl}}/images/about/pj_party.jpg" alt="Image 8">
-  <img src="{{site.baseurl}}/images/about/trent_family.png" alt="Image 9">
-  <img src="{{site.baseurl}}/images/about/claire.jpg" alt="Image 10">
-  <img src="{{site.baseurl}}/images/about/grandkids.jpg" alt="Image 11">
-  <img src="{{site.baseurl}}/images/about/farm.jpg" alt="Image 12">
+  <img src="https://finnsbeachclub.com/wp-content/uploads/2024/09/basketball-court-ball-and-sports-match-or-competi-2023-11-27-04-58-17-utc.jpg" alt="Image 1">
+  <img src="https://images.alphacoders.com/246/246223.jpg" alt="Image 2">
+  <img src="https://store-images.s-microsoft.com/image/apps.47252.13510798883386282.a1e5df65-8dd7-427c-9da9-506afa37b254.f4132380-deee-4518-8bbd-2a9b540046f3" alt="Image 3">
+  <img src="https://m.media-amazon.com/images/I/515fsT6ty4L._UF1000,1000_QL80_.jpg" alt="Image 4">
+  <img src="https://images.squarespace-cdn.com/content/v1/551b7247e4b04e2cba1e41ce/1696306155257-93OF7KRMDCU89XY3BR1G/image-asset.jpeg" alt="Image 5">
+  <img src="https://encrypted-tbn0.gstatic.com/images q=tbn:ANd9GcR4LL-l9Cg2k7Mc2v4C3kRapvLBDXvUop4MECSqxf_PS8OKoPW6L63BU-_99oscOyLhp1jhB5OhonWR2_tygk896w" alt="Image 6">
+  <img src="https://thehintofrosemary.com/wp-content/uploads/2020/02/ramen-cover-scaled.jpg" alt="Image 7">
 </div>
