@@ -64,7 +64,16 @@ Hi! My name is [Your Full Name].
 <style>
     .button {
         cursor: pointer;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 8px;
     }
+    #count {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+      display: block;
+      }
 </style>
 </head>
 
@@ -79,6 +88,22 @@ Click Me!
     Click Me too!
 </a>
 
+<h1>
+Click Counter
+</h1>
+  <button onclick="incrementCounter()">
+  Click Me!
+  </button>
+  <span id="count">0</span>
 
+  <script>
+    let counter = 0;
+
+    function incrementCounter() {
+      counter++;
+      document.getElementById("count").textContent = counter;
+    }
+  </script>
+  
 </body>
 </html>
