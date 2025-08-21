@@ -7,7 +7,7 @@ comments: true
 
 ## As a conversation Starter
 
-Hello! My Name is Perry Say and I was borned and Raised in San Diego.
+Hello! My Name is Perry Say and I was borned and Raised in San Diego, California.
 
 <comment>
 Flags are made using Wikipedia images
@@ -61,9 +61,6 @@ Flags are made using Wikipedia images
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
         {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
     ];
 
     // 3a. Consider how to update style count for size of container
@@ -121,7 +118,7 @@ Everything for me, as for many others, revolves around family and faith.
 Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
+  <img src="https://finnsbeachclub.com/wp-content/uploads/2024/09/basketball-court-ball-and-sports-match-or-competi-2023-11-27-04-58-17-utc.jpg" alt="Image 1">
   <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
   <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
   <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
