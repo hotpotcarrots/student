@@ -61,6 +61,8 @@ Hi! My name is [Your Full Name].
 
 <html>
 <head>
+
+<!--button style-->
 <style>
     .button {
         cursor: pointer;
@@ -74,6 +76,11 @@ Hi! My name is [Your Full Name].
       margin-top: 20px;
       display: block;
       }
+     button:hover {
+      background: #45a049;
+      transform: scale(1.1);
+    }
+      
 </style>
 </head>
 
@@ -83,27 +90,110 @@ Click Me!
 </button>
 
 
+<!--added link-->
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="button">
     Click Me too!
 </a>
 
-<h1>
-Click Counter
-</h1>
-  <button onclick="incrementCounter()">
-  Click Me!
-  </button>
+<!--button clicker-->
+<h1>Click Counter Game</h1>
+
+  <div id="controls">
+    <button onclick="incrementCounter()">Click Me!</button>
+    <button onclick="resetCounter()">Reset</button>
+  </div>
+
   <span id="count">0</span>
+
+  <h2>Upgrades</h2>
+  <div id="upgrades">
+    <button class="upgrade" id="upgradeClick" onclick="buyClickUpgrade()">⭐ +1 Per Click (Cost: 50)</button>
+    <button class="upgrade" id="autoClicker" onclick="buyAutoClicker()">⚡ Auto Clicker (Cost: 200)</button>
+  </div>
 
   <script>
     let counter = 0;
+    let clickPower = 1;
+    let autoClickers = 0;
+
+    const countDisplay = document.getElementById("count");
+    const upgradeClickBtn = document.getElementById("upgradeClick");
+    const autoClickerBtn = document.getElementById("autoClicker");
+
+    // Load saved values
+    if (localStorage.getItem("clickCounter")) {
+      counter = parseInt(localStorage.getItem("clickCounter"));
+      countDisplay.textContent = counter;
+    }
+
+    if (localStorage.getItem("clickPower")) {
+      clickPower = parseInt(localStorage.getItem("clickPower"));
+    }
+    if (localStorage.getItem("autoClickers")) {
+      autoClickers = parseInt(localStorage.getItem("autoClickers"));
+      if (autoClickers > 0) startAutoClicker();
+    }
 
     function incrementCounter() {
-      counter++;
-      document.getElementById("count").textContent = counter;
+      counter += clickPower;
+      updateDisplay();
+      playClickSound();
     }
+
+    function resetCounter() {
+      counter = 0;
+      clickPower = 1;
+      autoClickers = 0;
+      updateDisplay();
+      localStorage.clear();
+    }
+
+    function updateDisplay() {
+      countDisplay.textContent = counter;
+      localStorage.setItem("clickCounter", counter);
+
+      localStorage.setItem("clickPower", clickPower);
+      localStorage.setItem("autoClickers", autoClickers);
+
+      countDisplay.classList.add("bounce");
+      setTimeout(() => countDisplay.classList.remove("bounce"), 200);
+
+      checkUpgrades();
+    }
+
+    // --- Upgrades ---
+    function buyClickUpgrade() {
+      if (counter >= 50) {
+        counter -= 50;
+        clickPower++;
+        updateDisplay();
+      }
+    }
+
+    function buyAutoClicker() {
+      if (counter >= 200) {
+        counter -= 200;
+        autoClickers++;
+        startAutoClicker();
+        updateDisplay();
+      }
+    }
+
+    function startAutoClicker() {
+      setInterval(() => {
+        counter += autoClickers;
+        updateDisplay();
+      }, 1000);
+    }
+
+    function checkUpgrades() {
+      upgradeClickBtn.disabled = counter < 50;
+      autoClickerBtn.disabled = counter < 200;
+    }
+
+    checkUpgrades();
   </script>
-  
+
 </body>
 </html>
